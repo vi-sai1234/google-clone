@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+          .container{
+               min-height: 100vh;
+               width: 100vw;
+               padding: 23px;
+               background-color: #292a2d;
+          }
+          #input-box{
+            border: 1px solid black;
+            padding: 23px;
+          }
+          input,textarea{
+            width: 100%;
+            background-color: transparent;
+            border:none;
+            outline: none;
+            margin-top: 6px;
+            color: white;
+            font-size: 1.5rem;
+          }
+          #addnote{
+            padding:8px 12px ;
+            margin-top: 40px;
+            background: transparent;
+            color: white;
+            font-size: 1rem;
+          }
+          #notes{
+            padding: 23px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-size: 2rem;
+          }
+          .note{
+            width: 300px;
+            color: #a1a0a0;
+            margin: 12px;
+            padding: 12px;
+            border: 1px solid black;
+            background: transparent;
+            font-size: 1rem;
+          }
+          .deletenote{
+            float: right;
+            color: aqua;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="input-box">
+        <input type="text" id="addtitle" placeholder="Title">
+        <textarea name="Take a note..." id="addtext"></textarea>
+
+        <button id="addnote">Add</button>
+        </div>
+        <div id="notes">
+
+        </div>
+    </div>
+    <script src="google.js"></script>
+</body>
+</html>
